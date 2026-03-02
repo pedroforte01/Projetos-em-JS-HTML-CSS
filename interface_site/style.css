@@ -1,0 +1,256 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DO CORPO */
+body {
+    height: 100vh;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* CAMADA ESCURA SOBRE A IMAGEM */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* BARRA DE TOPO */
+.barra-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Garantir que o conteúdo da barra fique ACIMA da camada escura */
+.barra-topo * {
+    position: relative;
+    z-index: 1001;
+}
+
+.barra-conteudo {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* INÍCIO (ESQUERDA) */
+.inicio {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    position: relative;
+    z-index: 1002;
+}
+
+.inicio:hover {
+    color: #acc5cc;
+}
+
+/* ÁREA DIREITA (TODOS OS ÍCONES E INFO) */
+.info-direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1002;
+}
+
+/* ITENS DE INFORMAÇÃO (TEL, LOCAL, FAIXA) */
+.info-direita span {
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ===== ÍCONE SOCIAL (INSTAGRAM) ===== */
+.icone-social-IG {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.icone-social-IG .icone-rede-ig {
+    width: 33px;  
+    height: 33px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.icone-social-IG:hover .icone-rede-ig {
+    transform: scale(1.15);
+    filter: brightness(1.1) sepia(0.6) saturate(4) hue-rotate(300deg);
+}
+
+/* ===== ÍCONE SOCIAL (WHATSAPP) ===== */
+.icone-social-WPP {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.icone-social-WPP .icone-rede-wpp {
+    width: 20px; 
+    height: 20px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.icone-social-WPP:hover .icone-rede-wpp {
+    transform: scale(1.15);
+    filter: brightness(1.1) sepia(0.4) saturate(5) hue-rotate(80deg);
+}
+
+
+.icone-social-WPP:hover .icone-rede {
+    transform: scale(1.15);
+    filter: brightness(1.1) sepia(0.4) saturate(5) hue-rotate(80deg);
+}
+
+/* ===== ÍCONE SOCIAL (GOOGLE MAPS) ===== */
+.icone-social-Gmaps {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.icone-social-Gmaps .icone-rede-gmaps {
+    width: 22px; 
+    height: 22px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.icone-social-Gmaps:hover .icone-rede-gmaps {
+    transform: scale(1.15);
+    filter: brightness(1.2) drop-shadow(0 0 4px #4285F4);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: white;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 100;
+    margin-left: 100px;
+    margin-top: 111px;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* TABLET (até 768px) */
+@media (max-width: 768px) {
+    .barra-conteudo {
+        padding: 0 20px;
+    }
+    
+    .info-direita {
+        gap: 15px;
+    }
+    
+    .info-direita span {
+        font-size: 13px;
+    }
+    
+    .icone-rede {
+        width: 20px;
+        height: 20px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 20px;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+}
+
+/* CELULAR (até 480px) */
+@media (max-width: 480px) {
+    .barra-topo {
+        height: auto;
+        min-height: 50px;
+        padding: 10px 0;
+    }
+    
+    .barra-conteudo {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 15px;
+    }
+    
+    .info-direita {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .info-direita span {
+        font-size: 12px;
+    }
+    
+    .icone-rede {
+        width: 18px;
+        height: 18px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+}
+
+/* CELULAR PEQUENO (até 360px) */
+@media (max-width: 360px) {
+    .info-direita {
+        gap: 8px;
+    }
+    
+    .info-direita span {
+        font-size: 11px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 8px;
+        margin-left: 20px;
+        margin-top: 120px;
+    }
+}

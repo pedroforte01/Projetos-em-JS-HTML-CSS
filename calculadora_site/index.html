@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <h1>CALCULADORA</h1>
+            
+            <div class="input-group">
+                <label>Digite a conta:</label>
+                <input type="text" id="expressao" placeholder="Ex: 2 + 3">
+                <div class="exemplo">use + - * /</div>
+            </div>
+            
+            <div class="resultado">
+                <div class="label">RESULTADO</div>
+                <div class="valor" id="resultado">0</div>
+            </div>
+            
+            <div id="erro" class="erro"></div>
+            
+            <button onclick="calcular()">CALCULAR</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
