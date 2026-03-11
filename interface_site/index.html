@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,32 +7,33 @@
     <title>Pedro Forte | Jiu-Jitsu</title>
 
     <!-- FONTES -->
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Staatliches&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- BARRA DE TOPO -->
+    <!-- BARRA DE TOPO FIXA -->
     <div class="barra-topo">
         <div class="barra-conteudo">
             <!-- INÍCIO -->
-            <a href="#" class="inicio">I N Í C I O</a>
+            <a href="/" class="inicio">I N Í C I O</a>
             
             <!-- ÁREA DIREITA -->
             <div class="info-direita">
                 <!-- Instagram -->
-                <a href="https://www.instagram.com/_pedrofortejj/" class="icone-social-IG" target="_blank">
+                <a href="https://www.instagram.com/_pedrofortejj/" class="icone-social-IG" target="_blank" rel="noopener noreferrer">
                     <img src="img/ig.logo2.svg" alt="Instagram" class="icone-rede-ig">
                 </a>
 
                 <!-- WhatsApp -->
-                <a href="https://wa.me/message/RE4LPELRA5E5P1" class="icone-social-WPP" target="_blank">
+                <a href="https://wa.me/message/RE4LPELRA5E5P1" class="icone-social-WPP" target="_blank" rel="noopener noreferrer">
                     <img src="img/wpp.logo.svg" alt="WhatsApp" class="icone-rede-wpp">
                 </a>
 
                 <!-- Google Maps -->
-                <a href="https://maps.app.goo.gl/tSh2iLx5nYDnKUxX8" class="icone-social-Gmaps" target="_blank">
+                <a href="https://maps.app.goo.gl/tSh2iLx5nYDnKUxX8" class="icone-social-Gmaps" target="_blank" rel="noopener noreferrer">
                     <img src="img/gmaps.logo.svg" alt="Google Maps" class="icone-rede-gmaps">
                 </a>
 
@@ -39,10 +41,107 @@
         </div>
     </div>
 
-    <!-- TÍTULO PRINCIPAL -->
-    <h1>Pedro<br>Forte</h1>
+    <!-- SEÇÃO SUPERIOR (FUNDO 1) -->
+    <section class="secao-superior">
+        <h1>Pedro Forte</h1>
 
-    <!-- JAVASCRIPT -->
+        <div class="seta-scroll" id="scroll-down">
+            <img src="img/seta-baixo.svg" alt="Descer">
+        </div>
+
+    </section>
+
+    <!-- SEÇÃO INFERIOR (FUNDO 2) -->
+    <section class="secao-inferior">
+        <div class="particulas"></div>
+        <div class="conteudo-inferior">
+            <h2>Campanha Competitiva 2026</h2>
+            <div class="area-campanha">
+
+                <div class="eventos">
+                   <ul class="lista-eventos"></ul>
+                </div>
+
+                <div class="grafico">
+                    <div class="donut" id="donut-chart">
+                        <div class="donut-center">
+                            <span id="porcentagem-vitoria">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="legenda-grafico">
+
+                        <div class="legenda-item">
+                            <span class="cor vitoria"></span>
+                            <p>Vitórias</p>
+                        </div>
+
+                        <div class="legenda-item">
+                            <span class="cor derrota"></span>
+                            <p>Derrotas</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="estatisticas">
+
+                    <div class="stat">
+                        <h3 id="total-lutas">0</h3>
+                        <p>Lutas</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 id="total-vitorias">0</h3>
+                        <p>Vitórias</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 id="total-derrotas">0</h3>
+                        <p>Derrotas</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 id="taxa-vitoria">0%</h3>
+                        <p>Taxa de vitória</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 id="taxa-finalizacao">0%</h3>
+                        <p>Taxa de finalização</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 id="tempo-medio">0:00</h3>
+                        <p>Tempo médio</p>
+                    </div>
+
+                </div>
+
+                <div class="medalhas">
+
+                    <div class="medalha">
+                        <h3 id="total-ouro">0</h3>
+                        <p>Ouro 🥇</p>
+                    </div>
+
+                    <div class="medalha">
+                        <h3 id="total-prata">0</h3>
+                        <p>Prata 🥈</p>
+                    </div>
+
+                    <div class="medalha">
+                        <h3 id="total-bronze">0</h3>
+                        <p>Bronze 🥉</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
+
