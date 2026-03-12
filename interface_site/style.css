@@ -289,13 +289,16 @@ body {
 /* EVENTOS COLUNA */
 .eventos{
     flex:1;
+    min-width:0; /* NOVO */
     padding-right:30px;
     border-right:1px solid rgba(255,255,255,0.08);
 }
 
+
 /* GRAFICO */
 .grafico{
     flex:1;
+    min-width:0; /* NOVO */
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -357,6 +360,7 @@ body {
 /* ESTATÍSTICAS */
 .estatisticas{
     flex:1;
+    min-width:0; /* NOVO */
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:18px;
@@ -469,7 +473,7 @@ body {
 
     .conteudo-inferior h2{
         font-size:1.8rem;
-        letter-spacing:4px;
+        letter-spacing:2px;
         text-align:center;
     }
 
@@ -498,6 +502,7 @@ body {
         display:flex;
         flex-direction:column;
         align-items:center;
+        padding:0;
     }
 
     .eventos,
@@ -505,5 +510,11 @@ body {
     .estatisticas{
         width:100%;
     }
+
+    .lista-eventos li{
+        font-size:0.9rem;
+        word-break:break-word;
+    }
+
 }
 
