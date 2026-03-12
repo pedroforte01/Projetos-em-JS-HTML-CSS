@@ -397,20 +397,15 @@ body {
     position:relative;
 }
 
-.medalha{
-
-    background:rgba(255,255,255,0.04);
-
-    padding:20px 30px;
-
-    border-radius:12px;
-
-    border:1px solid rgba(255,255,255,0.06);
-
-    text-align:center;
-
-    transition:0.25s;
-
+.medalhas{
+    width:100%;
+    max-width:500px; /* NOVO */
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    position:relative;
+    flex-wrap:wrap; /* NOVO */
 }
 
 .medalha:hover{
@@ -518,18 +513,16 @@ body {
     }
 
     .medalhas{
-        gap:12px;
-        flex-wrap:wrap;
-        justify-content:center;
+        gap:10px;
+        max-width:100%;
     }
 
     .medalha{
-        padding:12px 16px;
-        min-width:80px;
+        padding:12px 14px;
     }
 
     .medalha h3{
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 }
 
