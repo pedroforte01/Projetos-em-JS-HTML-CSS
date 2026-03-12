@@ -466,9 +466,10 @@ body {
 
     .secao-superior h1{
         font-size:2.2rem;
-        letter-spacing:8px;
+        letter-spacing:6px;
         margin-left:0;
         text-align:center;
+        width:100%;
     }
 
     .conteudo-inferior h2{
@@ -516,5 +517,19 @@ body {
         word-break:break-word;
     }
 
+    .medalhas{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .medalha{
+        padding:12px 16px;
+        min-width:80px;
+    }
+
+    .medalha h3{
+        font-size:1.6rem;
+    }
 }
 
