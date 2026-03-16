@@ -431,14 +431,18 @@ padding-left:0;
     background-position: center;
 }
 
+.secao-superior{
+    display:flex;
+    flex-direction:column;
+    justify-content:center; /* centraliza vertical */
+    align-items:center;     /* centraliza horizontal */
+    text-align:center;
+}
+
 .secao-superior h1{
-font-size:2.2rem;
-letter-spacing:6px;
-margin-left:0;
-text-align:center;
-justify-content:center;
-position:relative;
-top:-15px;
+    margin:0;
+    position:relative;
+    top:-10px; /* sobe um pouquinho */
 }
 
 .conteudo-inferior h2{
