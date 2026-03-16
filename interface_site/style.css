@@ -462,6 +462,24 @@ padding:12px 14px;
 
     .medalha h3{
         font-size:1.5rem;
-    }
+}
+
+.hero h1{
+
+        position:relative;
+        top:-20px;
+}
+
+.secao-superior{
+    min-height:100vh;
+    background-image:url("img/bg_sup_mobile.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    padding-top:50px;
+    display:flex;
+    align-items:center;
+}
+
 }
 
