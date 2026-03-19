@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 });
 
-/*------- EFEITO SANFONA DA BIOGRAFIA -------*/
+/*------- EFEITO SANFONA EXCLUSIVA (UMA POR VEZ) -------*/
 document.addEventListener("DOMContentLoaded", () => {
     const marcosCards = document.querySelectorAll(".marco-card");
 
@@ -278,8 +278,15 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if(header) {
             header.addEventListener("click", () => {
-                // Alterna a classe 'aberta' no card clicado
-                card.classList.toggle("aberta");
+                // Se o card clicado já estiver aberto, a gente só fecha ele
+                if (card.classList.contains("aberta")) {
+                    card.classList.remove("aberta");
+                } else {
+                    // Se estiver fechado, primeiro fechamos TODOS os outros...
+                    marcosCards.forEach(c => c.classList.remove("aberta"));
+                    // ...e depois abrimos o que foi clicado
+                    card.classList.add("aberta");
+                }
             });
         }
     });

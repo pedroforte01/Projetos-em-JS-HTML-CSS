@@ -654,8 +654,8 @@ body {
 
 /* Estado Aberto (Quando o JS coloca a classe 'aberta') */
 .marco-card.aberta .marco-body {
-    max-height: 300px; /* Altura suficiente pra caber a história */
-    opacity: 1;
+max-height: 600px; /* Aumentamos o limite para o texto respirar no celular */
+opacity: 1;
 }
 
 .marco-card.aberta .seta-bio {
@@ -666,6 +666,16 @@ body {
 .marco-card.aberta {
     border-color: rgba(127, 209, 255, 0.4);
     background: rgba(127, 209, 255, 0.05);
+}
+
+@media (max-width: 600px) {
+    .marco-card {
+        padding: 15px; /* Diminuímos um pouco o padding interno pra sobrar mais espaço pro texto */
+    }
+    .marco-card p {
+        font-size: 0.9rem; /* Texto levemente menor no celular ajuda na leitura */
+        line-height: 1.5;
+    }
 }
 
 /* ========================================
