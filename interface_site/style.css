@@ -873,8 +873,14 @@ opacity: 1;
     .secao-superior {
         /* APLICANDO O MERGULHO NO MOBILE TAMBÉM */
         background: 
-            linear-gradient(to bottom, transparent 0%, transparent 80%, #000000 100%),
-            url("img/bg_sup_mobile.jpg");
+        linear-gradient(
+            to bottom, 
+            #000000 0%,         
+            transparent 15%,    
+            transparent 85%,   
+            #000000 100%      
+        ),
+        url("img/bg_sup.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
