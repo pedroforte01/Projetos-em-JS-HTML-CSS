@@ -880,7 +880,7 @@ opacity: 1;
             transparent 85%,   
             #000000 100%      
         ),
-        url("img/bg_sup.jpg");
+        url("img/bg_sup_mobile.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
