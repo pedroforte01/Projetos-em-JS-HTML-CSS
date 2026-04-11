@@ -2,7 +2,6 @@ import { randomUUID } from 'node:crypto'
 import { sql } from './SQL.js'
 
 export class databasepostgres {
-    #videos = new Map()
 
     async list(search) {
         let videos
