@@ -21,8 +21,29 @@ const lutas = [
         finalizacoes: 3,
         tempoTotal: 822,
         linkIg: "https://www.instagram.com/p/DUS7dBJDgMg/?igsh=dmhqdWFpcWFvMGM1" // Link adicionado para não dar erro
+    },
+    {
+        evento: "fortaleza open 2026 - NO-GI",
+        resultado: 1,
+        medalha: " CAT 🥇",
+        lutas: 2,   
+        vitorias: 2,
+        derrotas: 0,
+        finalizacoes: 2,
+        tempoTotal: 260,
+        linkIg: "https://www.instagram.com/p/DZ5777cJTgx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+        evento: "fortaleza open 2026 - NO-GI",
+        resultado: 3,
+        medalha: " ABS 🥉",
+        lutas: 2,
+        vitorias: 1,
+        derrotas: 1,
+        finalizacoes: 1,
+        tempoTotal: 310,
+        linkIg: "https://www.instagram.com/p/DZ5777cJTgx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
-    // Para adicionar eventos futuros, basta colocar resultado: 0
 ];
 
 let totalLutas = 0;
